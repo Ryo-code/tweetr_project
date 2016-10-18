@@ -1,0 +1,30 @@
+
+main {
+  background-color: white;
+  padding: 140px 40px 40px 40px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #eee;
+  border-radius: 5px;
+  display:block;
+  border:1px solid grey;
+  padding: 0px 10px 10px 10px;
+}
+
+section h2 {
+  display:block;
+  border-bottom:1px solid black;
+  padding: 10px;
+}
+
+textarea {
+  width: 345px;
+}
+
+span {
+    float: right;
+    padding-right: 5px;
+}

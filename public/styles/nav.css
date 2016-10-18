@@ -5,8 +5,7 @@
   color: #e8fdff; /* this refers to the colour of the FONT */
   position: fixed;
   overflow: auto;
-  margin-top: -16px;
-  max-height: 84px; /* is this necessary...? */
+  height: 84px; /* is this necessary...? */
   width: 100%;
   padding: 0px 24px; /* 2 ems equates to 24px (so 1 is 12) */
 
