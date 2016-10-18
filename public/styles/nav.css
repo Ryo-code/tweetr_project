@@ -1,0 +1,31 @@
+
+
+#nav-bar {
+  background-color: #00a087;
+  color: #e8fdff; /* this refers to the colour of the FONT */
+  position: fixed;
+  overflow: auto;
+  margin-top: -16px;
+  max-height: 84px; /* is this necessary...? */
+  width: 100%;
+  padding: 0px 24px; /* 2 ems equates to 24px (so 1 is 12) */
+
+}
+
+#nav-bar .logo {
+  height: 80px;
+  max-width: 80px;
+  float: left;
+  /*float: left;*/
+}
+
+#nav-bar .header {
+  padding-left: 10px;
+  float: left;
+  font-size: 200%;
+  /*vertical-align: middle;*/
+  line-height: 240%;
+}
+
+Q1: Why isn't my font size/line-height doing anything?
+Q2: Why would it be good to do floating left for both...?
