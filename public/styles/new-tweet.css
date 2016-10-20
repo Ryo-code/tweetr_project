@@ -6,7 +6,7 @@ main {
   margin: 0 auto;
 }
 
-section {
+.new-tweet {
   background-color: #eee;
   border-radius: 5px;
   display:block;
@@ -14,10 +14,10 @@ section {
   padding: 0px 10px 10px 10px;
 }
 
-section h2 {
+.new-tweet h2 {
   display:block;
   border-bottom:1px solid black;
-  padding: 10px;
+  margin: 14px 0px;
 }
 
 textarea {
@@ -27,4 +27,8 @@ textarea {
 span {
     float: right;
     padding-right: 5px;
+}
+
+.tooManyChars {
+  color: red;
 }
