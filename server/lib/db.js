@@ -5,6 +5,7 @@ const db = { tweets: initialTweets };
 const dbMethods = {
   saveTweet: (data) => {
     db.tweets.push(data);
+    console.log(data);
     return true;
   },
   getTweets: () => {
