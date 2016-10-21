@@ -32,3 +32,9 @@ span {
 .tooManyChars {
   color: red;
 }
+
+#flash-message {
+  background-color: #fccfcf;
+  color: red;
+  opacity: 0.5;
+}

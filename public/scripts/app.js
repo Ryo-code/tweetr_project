@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 $( document ).ready(function() {
 
   // Test / driver code (temporary). Eventually will get this from the server.
@@ -84,7 +83,6 @@ $( document ).ready(function() {
     return tweetHTML;
   };
 
-
   // Test / driver code (temporary)
   // console.log($tweet); // to see what it looks like
   // to add it to the page so we can make sure it's got all the right elements, classes, etc.
@@ -123,9 +121,24 @@ $( document ).ready(function() {
       }
     });
 
-
   });
 
   loadTweets();
 
 });
+
+/* (((...not sure what to do with this...)))
+var flashMsg = () => {
+  if($('textarea') === null || $('textarea') === "" || length < 0){
+
+    //where do I put .on("click", handler)...? confused...
+  }
+  //make flash message appear...
+}
+
+  //PSEUDO-CODE:
+//make a function that will bring up a flash message (and make it disappear)
+//to make it appear/disappear, you can turn it from 0.0 opacity to 0.5 for 5 seconds
+//conditions have to incorporate 1) exceeding 140chars, 2) empty string & 3) null
+//use jQuery...?
+*/
