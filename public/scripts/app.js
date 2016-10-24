@@ -107,20 +107,32 @@ $( document ).ready(function() {
     });
   }
 
-  $('#tweetForm').on('submit', function composeTweet(ev){
-    ev.preventDefault(); //prevents submitting (refreshing the page)
+  $('#tweetForm').on('submit', function composeTweet(e){
+    e.preventDefault(); //prevents submitting (refreshing the page)
     var strQuery = $('#tweetForm').serialize();
 
-    $.ajax({
-      url: 'http://localhost:8080/tweets',
-      data: strQuery,
-      method: 'POST',
-      success: function(result){
-        console.log(result);
-        loadTweets();
-      }
-    });
+    var text = $('textarea').val();
+    console.log('Text: ', text, 'text length = ', text.length);
 
+    if(text === null || text === "" || text.length > 140){
+      console.log("Fail...")
+
+      //change class to make the div appear
+
+
+
+    }else{
+      console.log("Success!")
+      $.ajax({
+        url: 'http://localhost:8080/tweets',
+        data: strQuery,
+        method: 'POST',
+        success: function(result){
+          console.log(result);
+          loadTweets();
+        }
+      });
+    }
   });
 
   loadTweets();
@@ -142,3 +154,7 @@ var flashMsg = () => {
 //conditions have to incorporate 1) exceeding 140chars, 2) empty string & 3) null
 //use jQuery...?
 */
+
+    //NEW pseudo-code...
+    //Make the submit button show a flash message if not truthy or if over 140 chars
+    //
