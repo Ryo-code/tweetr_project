@@ -116,13 +116,11 @@ $( document ).ready(function() {
 
     if(text === null || text === "" || text.length > 140){
       console.log("Fail...")
-
-      //change class to make the div appear
-
-
+      $('main div').addClass("flash-msg-appear");
 
     }else{
-      console.log("Success!")
+      $('main div').removeClass("flash-msg-appear");
+      console.log("Success!");
       $.ajax({
         url: 'http://localhost:8080/tweets',
         data: strQuery,
@@ -137,24 +135,31 @@ $( document ).ready(function() {
 
   loadTweets();
 
+
+
+  // if( $('new-tweet').hasClass('readyToTweet') ){
+  //   console.log('New-tweet DOES have the class "readyToTweet"!');
+  //   $( "#compose-button" ).click(function() {
+  //     console.log("Button pressed!");
+  //     $( ".new-tweet" ).slideUp( "slow", function() {
+  //       console.log("Class removed~")
+  //       $('.new-tweet').removeClass("readyToTweet");
+  //
+  //     });
+  //   });
+  // } else {
+  //   console.log('New-tweet does NOT have the class "readyToTweet"!');
+
+
+  $( "#compose-button" ).click(function() {
+    console.log("Button pressed!");
+    $( ".new-tweet" ).slideToggle(function() {
+      console.log("sliding...");
+      $("textarea").focus();
+    });
+
+
+  });
+
+
 });
-
-/* (((...not sure what to do with this...)))
-var flashMsg = () => {
-  if($('textarea') === null || $('textarea') === "" || length < 0){
-
-    //where do I put .on("click", handler)...? confused...
-  }
-  //make flash message appear...
-}
-
-  //PSEUDO-CODE:
-//make a function that will bring up a flash message (and make it disappear)
-//to make it appear/disappear, you can turn it from 0.0 opacity to 0.5 for 5 seconds
-//conditions have to incorporate 1) exceeding 140chars, 2) empty string & 3) null
-//use jQuery...?
-*/
-
-    //NEW pseudo-code...
-    //Make the submit button show a flash message if not truthy or if over 140 chars
-    //
