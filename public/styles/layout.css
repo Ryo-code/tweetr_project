@@ -86,7 +86,9 @@ article footer .icons {
 article footer .icons img {
   margin: 5px 0px;
   max-height: 25px;
+  opacity: 0.1;
 }
 
-/* you can use .join to append all the tweets together...
-if you can do all the markup in HTML properly */
+article footer .icons:hover {
+  opacity: 1;
+}

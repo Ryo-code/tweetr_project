@@ -135,31 +135,12 @@ $( document ).ready(function() {
 
   loadTweets();
 
-
-
-  // if( $('new-tweet').hasClass('readyToTweet') ){
-  //   console.log('New-tweet DOES have the class "readyToTweet"!');
-  //   $( "#compose-button" ).click(function() {
-  //     console.log("Button pressed!");
-  //     $( ".new-tweet" ).slideUp( "slow", function() {
-  //       console.log("Class removed~")
-  //       $('.new-tweet').removeClass("readyToTweet");
-  //
-  //     });
-  //   });
-  // } else {
-  //   console.log('New-tweet does NOT have the class "readyToTweet"!');
-
-
   $( "#compose-button" ).click(function() {
     console.log("Button pressed!");
     $( ".new-tweet" ).slideToggle(function() {
-      console.log("sliding...");
       $("textarea").focus();
     });
 
-
   });
-
 
 });

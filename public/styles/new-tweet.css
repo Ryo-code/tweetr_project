@@ -36,7 +36,7 @@ span {
   background-color: #fccfcf;
   color: red;
   opacity: 0;
-}   /*I'm leaving the opacity here as 0.1 so I don't forget about it*/
+}
 
 .flash-msg-appear {
     opacity: 0.7;

@@ -2,7 +2,6 @@ $( document ).ready(function() {
   // Handler for .ready() called.
   console.log("The page has fully loaded!");
 
-  // $( "textarea" ).on( "keyup", function( event ){
   $('textarea').keypress(function() {
     var maxChars = 140;
     var length = $(this).val().length;
@@ -16,8 +15,5 @@ $( document ).ready(function() {
       $('form span').removeClass("tooManyChars");
     }
   });
-
-
-
 
 });
