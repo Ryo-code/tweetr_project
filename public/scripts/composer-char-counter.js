@@ -5,7 +5,7 @@ $( document ).ready(function() {
   $('textarea').keypress(function() {
     var maxChars = 140;
     var length = $(this).val().length;
-    var length = maxChars - length;
+    length = maxChars - length;
 
     $('form span').text(length);
     console.log("length: ", length);

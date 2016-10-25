@@ -80,15 +80,15 @@ article footer p {
 
 article footer .icons {
   display: flex;
-  margin: 10px 0px 0px auto;
+  margin: 5px 0px 0px auto;
 }
 
 article footer .icons img {
-  margin: 5px 0px;
+  margin-bottom: 5px;
   max-height: 25px;
-  opacity: 0.1;
+  opacity: 0;
 }
 
-article footer .icons:hover {
+article:hover .icons img {
   opacity: 1;
 }
